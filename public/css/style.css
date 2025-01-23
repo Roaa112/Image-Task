@@ -1,0 +1,152 @@
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background-color:rgb(81, 22, 109);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+.folder-container {
+    position: relative;
+    width: 280px;
+    height: 120px;
+    margin: 20px auto;
+}
+
+.folder-back {
+    width: 100%;
+    height: 100px;
+    background: #be90ad;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: skewY(-5deg);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.folder-front {
+    width: 100%;
+    height: 100px;
+    background: rgb(81, 22, 109);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.folder-front img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.folder-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.photo-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-card:hover img {
+    transform: scale(1.05);
+}
+/* تنسيق الواجهة */
+.drag-drop-container {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drag-drop-container:hover {
+    background-color: #f0f8ff;
+}
+
+.drag-drop-container p {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.drag-drop-container input[type="file"] {
+    display: none;
+}
+
+.photo-preview {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.photo-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-photo-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.add-photo-btn:hover {
+    background: #0056b3;
+}
+.dropzone {
+    border: 2px dashed #007bff;
+    background: #f8f9fa;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.dz-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
